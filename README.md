@@ -1,3 +1,8 @@
+# Computational social science demonstration 2023
+
+This repository contains a PORT data donation flow, 
+which will be used as an instructional tool for students to learn about their own data, and data donation in general.
+
 # Port
 
 Port is a research tool that enables individuals to donate their digital trace data for academic research in a secure, transparent, and privacy-preserving way. 

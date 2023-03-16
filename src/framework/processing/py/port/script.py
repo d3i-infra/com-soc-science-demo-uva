@@ -107,10 +107,10 @@ def process(sessionId):
     yield donate_logs(f"{sessionId}-tracking")
 
     platforms = [
-        ("Twitter", extract_twitter),
+        #("Twitter", extract_twitter),
         ("Instagram", extract_instagram),
-        ("Facebook", extract_facebook),
-        ("YouTube", extract_youtube),
+        #("Facebook", extract_facebook),
+        #("YouTube", extract_youtube),
     ]
 
     # progress in %
@@ -267,13 +267,6 @@ def extract_instagram(instagram_zip):
         df = pd.DataFrame(your_topics, columns=["Your Topics"])
         result["your_topics"] = {"data": df, "title": TABLE_TITLES["instagram_your_topics"]}
   
-    account_created_at_bytes = unzipddp.extract_file_from_zip(instagram_zip, "signup_information.json")
-    account_created_at_dict = unzipddp.read_json_from_bytes(account_created_at_bytes)
-    account_created_at = instagram.account_created_at_to_list(account_created_at_dict)
-    if account_created_at:
-        df = pd.DataFrame(account_created_at, columns=["Account created at"])
-        result["account_created_at"] = {"data": df, "title": TABLE_TITLES["instagram_account_created_at"]}
-
     return validation, result
 
 
