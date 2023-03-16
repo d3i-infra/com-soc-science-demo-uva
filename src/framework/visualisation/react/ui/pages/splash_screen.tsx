@@ -82,10 +82,10 @@ export const SplashScreen = (props: Props): JSX.Element => {
     <>
       <div className='text-bodylarge font-body text-grey1'>
         <div className='mb-4'>
-        You are about to start the process of donating your data for the lecture on tracking from the Computational Social Science bachelor at the UvA. The data that we ask you to donate will be used in class to gain insight into how social media platforms work.
+          You are about to start the process of donating your data for the lecture on tracking from the Computational Social Science bachelor at the UvA. The data that we ask you to donate will be used in class to gain insight into how social media platforms work.
         </div>
         <div className='mb-4'>
-        We will walk you through this process step by step. During this process no data is stored or sent to the lecturers. You can delete rows from the data before donating. Data will only be donated and stored when you click the button “Yes, donate” on the page that shows your data.
+          We will walk you through this process step by step. During this process no data is stored or sent to the lecturers. You can delete rows from the data before donating. Data will only be donated and stored when you click the button “Yes, donate” on the page that shows your data.
         </div>
         <div className='mb-4'>
           By clicking on the button “<span className='font-bodybold'>Ja, doneer</span>”:
@@ -100,7 +100,7 @@ export const SplashScreen = (props: Props): JSX.Element => {
 
         </div>
         <div className='mb-10'>
-        This website keeps track of your activity - for example on which pages of this website you click - as part of this research. More information can be found on our privacy page.
+          This website keeps track of your activity - for example on which pages of this website you click - as part of this research. More information can be found on our privacy page.
         </div>
       </div>
     </>
